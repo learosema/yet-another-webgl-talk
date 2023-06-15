@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="{{ description }}" />
+    <meta name="x-base" content="{{ site.url }}/" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <title>{{ title }} – {{ site.name }}</title>
+
+    <link rel="stylesheet" href="{{ site.url}}/css/global.css" />
+  </head>
+  <body>
+    {% block header %}
+    {% endblock %}
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+    {% block aside %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+    
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>
